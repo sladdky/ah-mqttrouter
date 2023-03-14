@@ -20,7 +20,7 @@ Naive implementation of MqttRouter for <a href="https://github.com/mqttjs/MQTT.j
 <a name="installation"></a>
 ## Instalation
 ```sh
-npm install @odoaker/ah-mqttrouter --save
+npm install @sladdky/ah-mqttrouter --save
 ```
 
 <br>
@@ -29,7 +29,7 @@ npm install @odoaker/ah-mqttrouter --save
 ## Usage
 ```sh
 import { connect } from 'mqtt';
-import { MqttRouter } from '@odoaker/ah-mqttrouter'
+import { MqttRouter } from '@sladdky/ah-mqttrouter'
 
 const onMyMqttTopic1 = (request, response, next) => {
   //...your route logic
@@ -114,7 +114,7 @@ The MQTTclient that is requesting has to subscribe to 'responseTopic' and unsubs
 Example:
 ```sh
 ...
-import { createMqttRequestor } from '@odoaker/ah-mqttrouter/lib/utils'
+import { createMqttRequestor } from '@sladdky/ah-mqttrouter/lib/utils'
 
 const mqttRouter = new MqttRouter(mqttClient)
 const mqttRequestor = createMqttRequestor(mqttRouter)
